@@ -14,8 +14,6 @@
 				Upload to Imgur
 			</button>
 			<img src="http://i.stack.imgur.com/mNuk3.jpg" />
-			<!--<iframe src="http://test.humaxtvportal.com" scrolling="no" width=400 height=300 frameborder=0 style="border-width:0px; border-color:white; border-style:solid;"> 
-			</iframe> -->
 		</div>
 		
 		<div id="status"> 
@@ -39,13 +37,11 @@
 							timeout : 10000,
 							headers : {
 								Authorization : 'Client-ID 3006c55d3c0a42e'
-								//Authorization: 'Bearer 7f405aea5c60b67ce4dca3723f8b00b2fbeabe2f'
+							
 							},
 							data : {
 								type : 'base64',
 								image : img,
-								//album: "QE3kH",
-								//title : "han"								
 							},
 							dataType : 'json',
 							success : function(response) {
@@ -60,20 +56,9 @@
 								$("#status").text(errorThrown);
 							}
 						});
-						/*$.ajax({
-							url : 'https://api.imgur.com/3/account/HeeSuKim/albums/ids',
-							type : 'GET',
-							headers : {
-								Authorization : 'Client-ID 3006c55d3c0a42e'
-							},
-							success : function(response){
-								$("#status").text(response);
-							},
-						});*/
 				}
 			});
 		});
 		</script>
-
 	</body>
 </html>
